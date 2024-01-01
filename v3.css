@@ -42,8 +42,8 @@ body {
     background: url(https://imageup.ru/img186/4447088/fon.jpg) repeat-y;
     */
     background: url(https://imageup.ru/img228/4686581/better-fon.png) repeat-y;
-    /*background-size: contain;
-    background-size: 100% auto;*/
+    background-size: contain;
+    background-size: 100% auto;
 }
 
 .l-page {
@@ -422,7 +422,7 @@ body {
     border: none;
     text-align: left;
     border-radius: 8px;
-    border: 1px solid var(--color-2-1);
+    border: 1px dotted var(--color-2-1);
 }
 
 /*округление аватарок*/
@@ -495,4 +495,18 @@ body {
 /* Отступ между активностью и избранным */
 .p-profiles .profile-head .c-info .c-additionals {
     margin-bottom: 10px;
+}
+
+/* Отступ между информацией и списками */
+.p-profiles .profile-head .c-brief header {
+    margin-bottom: 6px;
+}
+
+.p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
+    margin-bottom: 6px;
+}
+
+/* Отступ между автаркой и конпками */
+profile-actions {
+    margin-top: 0px;
 }
