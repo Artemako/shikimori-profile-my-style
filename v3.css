@@ -493,15 +493,16 @@ body {
 }
 
 /* Отступ между активностью и избранным */
+
+/*
 .p-profiles .profile-head .c-info .c-additionals {
     margin-bottom: 10px;
 }
+ */
+
 
 /* Отступ между информацией и списками */
-.p-profiles .profile-head .c-brief header {
-    margin-bottom: 6px;
-}
-
+.p-profiles .profile-head .c-brief header,
 .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
     margin-bottom: 6px;
 }
@@ -509,4 +510,38 @@ body {
 /* Отступ между автаркой и конпками */
 profile-actions {
     margin-top: 0px;
+}
+
+/* Количество блоков достижений */
+
+.profile-content .cc-achievements .b-achievement:nth-child(n+2),
+.profile-content .cc-franchises .b-badge:nth-child(n+2),
+.profile-content .cc-authors .b-achievement:nth-child(n+2) {
+    display: none;
+}
+
+/*Изменение в оформлении блока достижений*/
+div.cc-2:nth-child(2) {
+    display: grid;
+    gap: 8px;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+@media (min-width: 768px) {
+    #profiles_show .achievements > .cc-2 {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+div.cc-2:nth-child(2) .c-column {
+    width: 100% !important;
+    margin: 0;
+}
+
+.b-achievement,
+div.b-tooltipped {
+    width: 100% !important;
+    padding: 0;
 }
