@@ -1,0 +1,498 @@
+@import url(https://css-club.web.app/css/fixed_cover.min.css);
+
+:root {
+    --color-1-1: #1F66E0;
+    --color-1-2: #1B5CC4;
+
+    --color-2-1: #03AAFF;
+    --color-2-2: #049AE5;
+
+    --font-size-base-desktop: 13px;
+    --font-size-base-mobile: 13px;
+    --font-main: Arial, Verdana, sans-serif;
+    --font-alt: Open Sans, Helvetica Neue, Arial, Verdana, sans-serif;
+    --font-code: Monaco, Menlo, Consolas, Ubuntu Mono, Courier New, monospace;
+    --font-alt-hadline-letter-spacing: 0.18px;
+    --font-alt-text-letter-spacing: -0.13px;
+    --top-menu-height: 46px;
+}
+
+html[data-color-mode=light] {
+    --link-color: var(--color-2-1);
+    --link-hover-color: var(--color-2-2);
+    --link-active-color: var(--color-2-2);
+}
+
+html[data-color-mode="light"] {
+    --headline-background-color: #f8f9fa;
+    --headline-border-color: #e3f2fd;
+    --headline-color: var(--color-2-1);
+}
+
+html[data-color-mode=light] {
+    --headline-background-color: #f8f9fa;
+    --headline-border-color: #e3f2fd;
+    --headline-color: var(--color-2-1);
+}
+
+/*цвет фона*/
+body {
+    /*
+    background: url(https://mobimg.b-cdn.net/v3/fetch/11/1162a11cddd79d4c84d8a7f16721a602.jpeg) repeat;
+    background: url(https://imageup.ru/img186/4447088/fon.jpg) repeat-y;
+    */
+    background: url(https://imageup.ru/img228/4686581/better-fon.png) repeat-y;
+    /*background-size: contain;
+    background-size: 100% auto;*/
+}
+
+.l-page {
+    background-color: rgba(255, 255, 255, 0.94);
+    outline: 16px solid rgba(255, 255, 255, 0.3);
+    margin-bottom: 16px;
+}
+
+/* Верхнее меню */
+
+/* sticky_menu */
+@media screen and (min-width: 1025px) {
+    .l-top_menu-v2 {
+        position: sticky;
+        top: 0;
+    }
+
+    .l-top_menu-v2 .active .submenu {
+        max-height: calc(100vh - 46px);
+        overflow: auto;
+    }
+}
+
+/* Цвета фона и текста верхнего меню */
+.l-top_menu-v2 {
+    background: var(--color-1-1) !important;
+    border: none;
+}
+
+/* Цвета фона и границ подменю */
+.l-top_menu-v2 .submenu {
+    background: var(--color-1-1) !important;
+    border: none;
+}
+
+/* Фоновый цвет кнопок верхнего меню */
+.l-top_menu-v2 .menu-dropdown > span {
+    background: var(--color-1-1);
+}
+
+/* Фоновый цвет активных кнопок верхнего меню */
+.l-top_menu-v2 .menu-dropdown.active > span,
+.l-top_menu-v2 .menu-dropdown > span:focus {
+    background-color: var(--color-1-2);
+}
+
+/* Фоновый цвет кнопок верхнего меню при наведении */
+.l-top_menu-v2 .menu-dropdown > span a:hover {
+    background-color: var(--color-1-2);
+}
+
+/* Фоновый цвет кнопок верхнего меню при нажатии */
+.l-top_menu-v2 .menu-dropdown > span a:active {
+    background-color: var(--color-1-2);
+}
+
+/* Фоновый цвет активных иконок верхнего меню */
+.l-top_menu-v2 .menu-icon.active,
+.l-top_menu-v2 .menu-icon:focus {
+    background-color: var(--color-1-2);
+}
+
+/* Фоновый цвет иконок верхнего меню при наведении */
+.l-top_menu-v2 .menu-icon:hover {
+    background-color: var(--color-1-2);
+}
+
+/* Фоновый цвет иконок верхнего меню при нажатии */
+.l-top_menu-v2 .menu-icon:active {
+    background-color: var(--color-1-2);
+}
+
+/* Цвет текста ссылок подменю */
+.l-top_menu-v2 .submenu > a {
+    color: #fff;
+}
+
+/* Цвета фона и текста ссылок подменю при наведении */
+.l-top_menu-v2 .submenu > a:hover {
+    background: #fff;
+    color: var(--color-1-2);
+}
+
+/* Цвета фона и текста ссылок подменю при нажатии (js) */
+.l-top_menu-v2 .submenu > a.active {
+    background: #fff;
+    color: var(--color-1-2);
+}
+
+/* Цвета фона и текста ссылок подменю при нажатии */
+.l-top_menu-v2 .submenu > a:active {
+    background: #fff;
+    color: var(--color-1-2);
+}
+
+/* Цвета счётчика уведомлений на иконках */
+.l-top_menu-v2 .menu-icon[data-count]::after {
+    background: #fff;
+    border-color: var(--color-1-1);
+    color: var(--color-1-1);
+}
+
+
+/* Цвет фона и текста строки поиска в верхнем меню */
+.l-top_menu-v2 .global-search input {
+    background: #fff;
+    color: var(--color-1-1);
+}
+
+/* Цвет крестика для очистки строки поиска */
+.l-top_menu-v2 .global-search .clear {
+    color: var(--color-1-1);
+}
+
+/* Цвет иконки лупы в строке поиска */
+.l-top_menu-v2 .global-search .search-marker {
+    color: var(--color-1-1);
+}
+
+
+/* Цвет иконки лупы в активной строке поиска */
+.l-top_menu-v2.is-search-focus .global-search .search-marker {
+    color: var(--color-1-1);
+}
+
+/* Цвет иконки горячей клавиши «/» в строке поиска */
+.l-top_menu-v2 .global-search .hotkey-marker {
+    border-color: var(--color-1-1);
+    color: var(--color-1-1);
+}
+
+/* Цвет фона контейнера результатов поиска */
+.l-top_menu-v2 .global-search .search-results {
+    background-color: #fff;
+}
+
+.l-top_menu-v2.is-search-mobile .global-search {
+    background: var(--color-1-1);
+}
+
+/* Цвет фона и текста контейнера результатов поиска */
+.l-top_menu-v2 .global-search .search-results .search-mode {
+    border-top-color: var(--color-1-1);
+    color: var(--color-1-1);
+}
+
+
+/* Профиль */
+
+.p-profiles .profile-head .c-brief .avatar {
+    margin: 0px 20px 0px 0px;
+}
+
+
+.p-profiles .profile-head .c-history {
+    margin-top: 0px;
+}
+
+
+/* Имя пользователя в профиле */
+.p-profiles .profile-head .c-brief header h1 {
+    color: var(--color-1-1);
+}
+
+/* Полосы аниме и манги */
+.b-stats_bar.anime .bar,
+.b-stats_bar.anime .bar *,
+.b-stats_bar.manga .bar,
+.b-stats_bar.manga .bar * {
+    height: 16px;
+    line-height: 16px;
+}
+
+.b-stats_bar {
+    min-height: 0;
+}
+
+
+.b-stats_bar.anime .bar .first {
+    background: var(--color-1-1);
+}
+
+.b-stats_bar.anime .bar .second {
+    background: var(--color-1-2);
+}
+
+.b-stats_bar.anime .bar .third {
+    background: var(--color-1-1);
+}
+
+.b-stats_bar.manga .bar .first {
+    background: var(--color-1-1);
+}
+
+.b-stats_bar.manga .bar .second {
+    background: var(--color-1-2);
+}
+
+.b-stats_bar.manga .bar .third {
+    background: var(--color-1-1);
+}
+
+
+/* Спрятать запланировано/читаю */
+.stat_names {
+    display: none;
+    height: 0;
+}
+
+/* Уменьшенная история */
+.entry:last-child {
+    display: none;
+}
+
+
+/*кнопки профиля*/
+
+.my-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 8px;
+}
+
+.my-button {
+    display: block;
+    cursor: pointer;
+    color: #FFFFFF;
+    background-color: var(--color-2-2);
+    padding: 2px 8px;
+    border-radius: 4px;
+}
+
+.my-button:hover {
+    color: #FFFFFF;
+    background-color: var(--color-2-1);
+}
+
+.my-button.active {
+    color: var(--color-2-1);
+    background-color: #ffffff;
+    outline: 2px solid var(--color-2-1);
+    outline-offset: -1px;
+}
+
+
+/*Анимированный график активности */
+.activity .graph.vertical .line .bar {
+    box-sizing: content-box;
+    transform: translateY(1px);
+    transform-origin: center bottom;
+    animation-fill-mode: both;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-duration: 1.5s;
+    animation-name: activity;
+}
+
+.activity .graph.vertical .line .bar:hover {
+    animation-name: none;
+    transform: none;
+}
+
+.activity .graph.vertical .line:nth-of-type(6n+2) .bar {
+    animation-delay: -.25s;
+}
+
+.activity .graph.vertical .line:nth-of-type(6n+4) .bar {
+    animation-delay: -.5s;
+}
+
+.activity .graph.vertical .line:nth-of-type(6n+3) .bar {
+    animation-delay: -.75s;
+}
+
+.activity .graph.vertical .line:nth-of-type(6n+6) .bar {
+    animation-delay: -1s;
+}
+
+.activity .graph.vertical .line:nth-of-type(6n+5) .bar {
+    animation-delay: -1.25s;
+}
+
+@keyframes activity {
+
+    0%,
+    100% {
+        transform: translateY(1px);
+    }
+
+    50% {
+        transform: translateY(7px);
+    }
+}
+
+/*столбы график*/
+.bar.simple .bar.s3 {
+    background: var(--color-1-1);
+}
+
+.bar.simple .bar:hover.s3 {
+    background: var(--color-1-2);
+}
+
+.bar.simple .bar.s2 {
+    background: var(--color-2-1);
+}
+
+.bar.simple .bar:hover.s2 {
+    background: var(--color-2-2);
+}
+
+.bar.simple .bar.s1 {
+    background: var(--color-1-1);
+}
+
+.bar.simple .bar:hover.s1 {
+    background: var(--color-1-2);
+}
+
+.bar.simple .bar.s0 {
+    background: var(--color-2-1);
+}
+
+.bar.simple .bar:hover.s0 {
+    background: var(--color-2-2);
+}
+
+/* Уменьшение блока с активностью */
+.p-profiles-show .profile-content .lifetime .title .label {
+    font-size: 0;
+    line-height: 0;
+}
+
+.p-profiles-show .profile-content .lifetime .title .label::before {
+    content: 'Активность';
+    display: block;
+    color: #456;
+    font-weight: 700;
+    font-size: 13px;
+    line-height: 15px;
+    margin-top: 4px;
+}
+
+.p-profiles-show .profile-content .lifetime {
+    margin-bottom: 0;
+}
+
+.p-profiles-show .profile-content .lifetime .bar,
+.p-profiles-show .profile-content .lifetime .times {
+    display: none;
+}
+
+
+.p-profiles-show .profile-content .activity .title {
+    display: none;
+}
+
+.p-profiles-show .profile-content .activity {
+    height: 64px;
+}
+
+.p-profiles-show .profile-content .graph {
+    height: 100%;
+}
+
+/* .p-profiles-show .profile-content .cc-2 > .c-column:last-child > .block
+ */
+
+/* Основное */
+
+.headline,
+.midheadline,
+.subheadline {
+    border: none;
+    text-align: left;
+    border-radius: 8px;
+    border: 1px solid var(--color-2-1);
+}
+
+/*округление аватарок*/
+.avatar img,
+.submenu-triangle img,
+.inner header img {
+    border-radius: 10%;
+}
+
+/*Альтернативное расположение*/
+@media screen and (min-width: 768px) {
+    #profiles_show .profile-content > .cc-2 > .c-left {
+        display: none;
+    }
+
+    #profiles_show .profile-content > .cc-2 > .c-right {
+        float: none;
+        width: 100%;
+    }
+
+    #profiles_show .profile-content > .cc-2 > .c-right::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+
+    #profiles_show .profile-content > .cc-2 > .c-right > .cc-2a {
+        float: right;
+        width: 23%;
+        overflow: hidden;
+        margin: 0 !important;
+    }
+
+    #profiles_show .profile-content > .cc-2 > .c-right > .cc-2a > .c-column {
+        width: 100%;
+        margin: 0;
+    }
+
+    #profiles_show .profile-content > .cc-2 > .c-right > .cc-2a > :last-child {
+        margin-top: 15px;
+    }
+
+    #profiles_show .profile-content > .cc-2 > .c-right > .block {
+        width: 77%;
+        padding-right: 30px;
+        overflow: hidden;
+        clear: none;
+    }
+}
+
+/*Справление расстояний между списками в профиле*/
+@media screen and (min-width: 768px) {
+    .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .p-profiles .profile-head .c-info .c-lists-info .b-stats_bar {
+        margin-bottom: 10px;
+    }
+}
+
+
+/* Спрятать график*/
+.c-left {
+    display: none;
+}
+
+/* Отступ между активностью и избранным */
+.p-profiles .profile-head .c-info .c-additionals {
+    margin-bottom: 10px;
+}
