@@ -47,8 +47,8 @@ body {
 }
 
 .l-page {
-    background-color: rgba(255, 255, 255, 0.92);
-    outline: 16px solid rgba(255, 255, 255, 0.3);
+    background: #1e2128;
+    box-shadow: 0 0 10px rgba(0,0,0,.5);
     margin-bottom: 16px;
 }
 
