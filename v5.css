@@ -785,8 +785,8 @@ div.b-tooltipped {
 }
 
 /* спрятать старый никнейм пользователя */
-.tipsy, .tipsy-w {
-    display: none !important;
+.aliases {
+    pointer-events: none;
 }
 
 /* оценки с списке на мобилке*/
