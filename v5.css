@@ -204,7 +204,7 @@ body {
 }
 
 
-/* Имя пользователя в профиле */
+/* Имя пользователя в профиле (рыба) */
 .p-profiles .profile-head .c-brief header h1.aliases {
     color: var(--color-2-1);
     margin-right: 128px;
@@ -579,7 +579,11 @@ body {
 
 /* Уменьшение отступа между блоками */
 .l-page div div.profile-content div.cc-2.block {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
+}
+
+.p-profiles-show .profile-content .c-right .cc-2a {
+    margin-bottom: 15px !important;
 }
 
 /* Отступ между активностью и избранным */
@@ -587,7 +591,7 @@ body {
 
 .p-profiles .profile-head .c-info .c-additionals {
     margin-top: 8px;
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 }
 
 /* Текст Активность*/
@@ -931,5 +935,12 @@ div.b-tooltipped {
     content: "> ";
 }
 
+/* Изменение заголовков в панелях */
 
-
+div.CUSTOM_PANEL div.midheadline {
+    border: none;
+    border-left: 2px solid var(--color-2-1);
+    border-top: 2px solid var(--color-2-1);
+    width: fit-content;
+    border-top-left-radius: 8px;
+}
