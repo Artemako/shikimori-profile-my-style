@@ -210,7 +210,14 @@ body {
     margin-right: 128px;
     line-height: 22px;
     margin-bottom: 12px;
-    font-family: var(--font-code);
+    font-family: var(--font-main);
+    visibility: hidden;
+}
+.p-profiles .profile-head .c-brief header h1.aliases::before {
+    content: "𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 ";
+    color: var(--color-2-1);
+    visibility: visible;
+    /* font-size: 24px; */
 }
 
 /* Полосы аниме и манги */
@@ -583,6 +590,23 @@ body {
 	font-family: var(--font-alt);
 	text-transform: uppercase;
 	font-size: 12px;
+}
+
+
+/* Текст отзывы, комментарии */
+.p-profiles .profile-head .c-info .c-additionals div::after {
+    content: 'из рыбы';
+    color: var(--color-2-1);
+    padding-left: 3px;
+    padding-right: 10px;
+    display: inline-block;
+}
+
+.p-profiles .profile-head .c-info .c-additionals div:last-child::before{
+    content: '/';
+    color: var(--color-2-1);
+    padding-right: 10px;
+    display: inline-block;
 }
 
 
