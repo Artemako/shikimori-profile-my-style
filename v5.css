@@ -242,6 +242,7 @@ body {
 .b-stats_bar.manga .bar .third {
     background: transparent;
     color: var(--color-2-1);
+    font-size: 12px;
 }
 
 .b-stats_bar.anime .bar .first::before,
