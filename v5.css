@@ -196,8 +196,16 @@ body {
 
 .p-profiles .profile-head .c-brief .avatar {
     margin: 0px 20px 0px 0px;
+    max-width: 166px;
+    max-height: 166px;
+    margin-right: 16px;
 }
 
+/* Размеры аватара */
+.p-profiles .profile-head .c-brief .avatar img {
+    width: 166px;
+    height: 166px;
+}
 
 .p-profiles .profile-head .c-history {
     margin-top: 0px;
@@ -935,12 +943,22 @@ div.b-tooltipped {
     content: "> ";
 }
 
-/* Изменение заголовков в панелях */
 
+/* Изменение заголовков в панелях */
 div.CUSTOM_PANEL div.midheadline {
     border: none;
     border-left: 2px solid var(--color-2-1);
     border-top: 2px solid var(--color-2-1);
     width: fit-content;
     border-top-left-radius: 8px;
+}
+
+/* исправление после шрифта*/
+.b-comment > .inner .name-date {
+    line-height: normal;
+}
+
+/* Увеличение размера шрифта */
+.TEXT * {
+    font-size: 16px;
 }
