@@ -208,13 +208,13 @@ body {
 .p-profiles .profile-head .c-brief header h1.aliases {
     color: var(--color-2-1);
     margin-right: 128px;
-    line-height: 22px;
-    margin-bottom: 12px;
+    line-height: 20px;
+    margin-bottom: 10px;
     font-family: var(--font-main);
     visibility: hidden;
 }
 .p-profiles .profile-head .c-brief header h1.aliases::before {
-    content: "𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 ";
+    content: "𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 ";
     color: var(--color-2-1);
     visibility: visible;
     /* font-size: 24px; */
@@ -577,11 +577,17 @@ body {
     display: none;
 }
 
+/* Уменьшение отступа между блоками */
+.l-page div div.profile-content div.cc-2.block {
+    margin-bottom: 15px;
+}
+
 /* Отступ между активностью и избранным */
 
 
 .p-profiles .profile-head .c-info .c-additionals {
-    margin-top: 12px;
+    margin-top: 8px;
+    margin-bottom: 0px;
 }
 
 /* Текст Активность*/
@@ -596,17 +602,17 @@ body {
 
 /* Текст отзывы, комментарии */
 .p-profiles .profile-head .c-info .c-additionals div::after {
-    content: 'из рыбы';
+    content: 'из рыб';
     color: var(--color-2-1);
     padding-left: 3px;
-    padding-right: 10px;
+    padding-right: 6px;
     display: inline-block;
 }
 
 .p-profiles .profile-head .c-info .c-additionals div:last-child::before{
     content: '/';
     color: var(--color-2-1);
-    padding-right: 10px;
+    padding-right: 6px;
     display: inline-block;
 }
 
