@@ -11,7 +11,7 @@
     --font-size-base-desktop: 13px;
     --font-size-base-mobile: 13px;
     --font-main: Open Sans, Helvetica Neue, Arial, Verdana, sans-serif;
-    --font-alt:  Open Sans, Helvetica Neue, Arial, Verdana, sans-serif;
+    --font-alt: Open Sans, Helvetica Neue, Arial, Verdana, sans-serif;
     --font-code: Monaco, Menlo, Consolas, Ubuntu Mono, Courier New, monospace;
     --font-alt-hadline-letter-spacing: 0.18px;
     --font-alt-text-letter-spacing: -0.13px;
@@ -202,9 +202,11 @@ body {
 }
 
 /* Размеры аватара */
-.p-profiles .profile-head .c-brief .avatar img {
-    width: 166px;
-    height: 166px;
+@media screen and (min-width: 768px) {
+    .p-profiles .profile-head .c-brief .avatar img {
+        height: 166px;
+        width: 166px;
+    }
 }
 
 .p-profiles .profile-head .c-history {
@@ -221,6 +223,7 @@ body {
     font-family: var(--font-main);
     visibility: hidden;
 }
+
 .p-profiles .profile-head .c-brief header h1.aliases::before {
     content: "𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 𓆟 𓆞 𓆝 ";
     color: var(--color-2-1);
@@ -235,7 +238,7 @@ body {
 .b-stats_bar.manga .bar * {
     height: 16px;
     line-height: 16px;
-    
+
 }
 
 .b-stats_bar {
@@ -260,12 +263,12 @@ body {
 .b-stats_bar.manga .bar .second::before,
 .b-stats_bar.manga .bar .third::before {
     content: '';
-	display: block;
-	position: relative;
-	top: 50%;
-	width: 38%;
-	left: 2%;
-	outline: 1px solid var(--color-2-1);
+    display: block;
+    position: relative;
+    top: 50%;
+    width: 38%;
+    left: 2%;
+    outline: 1px solid var(--color-2-1);
 }
 
 .b-stats_bar.anime .bar .first::after,
@@ -275,12 +278,12 @@ body {
 .b-stats_bar.manga .bar .second::after,
 .b-stats_bar.manga .bar .third::after {
     content: '';
-	display: block;
-	position: relative;
-	top: -50%;
-	width: 38%;
-	left: 60%;
-	outline: 1px solid var(--color-2-1);
+    display: block;
+    position: relative;
+    top: -50%;
+    width: 38%;
+    left: 60%;
+    outline: 1px solid var(--color-2-1);
 }
 
 
@@ -604,11 +607,11 @@ body {
 
 /* Текст Активность*/
 .p-profiles .profile-head .c-info .c-additionals b {
-	padding-right: 5px;
-	color: var(--color-2-1);
-	font-family: var(--font-alt);
-	text-transform: uppercase;
-	font-size: 12px;
+    padding-right: 5px;
+    color: var(--color-2-1);
+    font-family: var(--font-alt);
+    text-transform: uppercase;
+    font-size: 12px;
 }
 
 
@@ -621,7 +624,7 @@ body {
     display: inline-block;
 }
 
-.p-profiles .profile-head .c-info .c-additionals div:last-child::before{
+.p-profiles .profile-head .c-info .c-additionals div:last-child::before {
     content: '/';
     color: var(--color-2-1);
     padding-right: 6px;
@@ -954,11 +957,23 @@ div.CUSTOM_PANEL div.midheadline {
 }
 
 /* исправление после шрифта*/
-.b-comment > .inner .name-date {
+.b-comment>.inner .name-date {
     line-height: normal;
 }
 
 /* Увеличение размера шрифта */
 .TEXT * {
     font-size: 16px;
+}
+
+/* цитаты спойлеры*/
+.b-quote-v2, .b-spoiler_block > div {
+    background-color: transparent;
+    border-left: 2px solid var(--color-2-1);
+}
+.b-spoiler_block > span {
+    background-color: var(--color-2-1);
+}
+.b-spoiler_block > span:hover {
+    background-color: var(--color-2-2);
 }
