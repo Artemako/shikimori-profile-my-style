@@ -196,16 +196,16 @@ body {
 
 .p-profiles .profile-head .c-brief .avatar {
     margin: 0px 20px 0px 0px;
-    max-width: 166px;
-    max-height: 166px;
+    max-width: 160px;
+    max-height: 160px;
     margin-right: 16px;
 }
 
 /* Размеры аватара */
 @media screen and (min-width: 768px) {
     .p-profiles .profile-head .c-brief .avatar img {
-        height: 166px;
-        width: 166px;
+        height: 160px;
+        width: 160px;
     }
 }
 
@@ -222,6 +222,7 @@ body {
     margin-bottom: 10px;
     font-family: var(--font-main);
     visibility: hidden;
+    vertical-align: top;
 }
 
 .p-profiles .profile-head .c-brief header h1.aliases::before {
@@ -229,6 +230,12 @@ body {
     color: var(--color-2-1);
     visibility: visible;
     /* font-size: 24px; */
+}
+
+/* Остальные прикеолы с названиями*/
+
+section.l-page div div.profile-content div.cc-2.block div.c-column.c-right div.cc-2a.m30 div.c-column.m0:first-child div.subheadline::after {
+    content: " ?";
 }
 
 /* Полосы аниме и манги */
@@ -967,13 +974,61 @@ div.CUSTOM_PANEL div.midheadline {
 }
 
 /* цитаты спойлеры*/
-.b-quote-v2, .b-spoiler_block > div {
+.b-quote-v2,
+.b-spoiler_block>div {
     background-color: transparent;
     border-left: 2px solid var(--color-2-1);
 }
-.b-spoiler_block > span {
+
+.b-spoiler_block>span {
     background-color: var(--color-2-1);
 }
-.b-spoiler_block > span:hover {
+
+.b-spoiler_block>span:hover {
     background-color: var(--color-2-2);
+}
+
+/* замена в Избранном*/
+/* https://holedigging.club/archive/images/pics/DJWwOBaV4AAudGC.jpg */
+/* https://holedigging.club/archive/images/pics/DXdqIFtV4AAIGHq.jpg%20orig.jpg */
+/* https://holedigging.club/archive/images/pics/DdtdQ76VAAUlLtx.jpg */
+/* https://holedigging.club/archive/images/pics/EP26DXnU4AIVBeJ.jpg */
+/* https://holedigging.club/archive/images/pics/EsHXlN8VQAA9OMq.jpg */
+/* https://holedigging.club/archive/images/pics/tkmiz-604446132840693761-20150529_173602-img1.jpg */
+/* https://holedigging.club/archive/images/pics/tkmiz-738030836520386561-20160601_083358-img1.jpg */
+/* https://holedigging.club/archive/images/pics/tkmiz-826461979984302080-20170131_090745-img1.jpg */
+.is-own-profile.d-cutted_covers .b-catalog_entry .cover{
+    pointer-events: none;
+}
+
+.is-own-profile.d-cutted_covers .b-catalog_entry:nth-child(1) .cover .image-cutter img {
+    content: url("https://holedigging.club/archive/images/pics/DJWwOBaV4AAudGC.jpg");
+}
+
+.is-own-profile.d-cutted_covers .b-catalog_entry:nth-child(2) .cover .image-cutter img {
+    content: url("https://holedigging.club/archive/images/pics/E6lrF4XVUAA0RoY-orig.jpg");
+}
+
+.is-own-profile.d-cutted_covers .b-catalog_entry:nth-child(3) .cover .image-cutter img {
+    content: url("https://holedigging.club/archive/images/pics/DdtdQ76VAAUlLtx.jpg");
+}
+
+.is-own-profile.d-cutted_covers .b-catalog_entry:nth-child(4) .cover .image-cutter img {
+    content: url("https://holedigging.club/archive/images/pics/EP26DXnU4AIVBeJ.jpg");
+}
+
+.is-own-profile.d-cutted_covers .b-catalog_entry:nth-child(5) .cover .image-cutter img {
+    content: url("https://holedigging.club/archive/images/pics/EsHXlN8VQAA9OMq.jpg");
+}
+
+.is-own-profile.d-cutted_covers .b-catalog_entry:nth-child(6) .cover .image-cutter img {
+    content: url("https://holedigging.club/archive/images/pics/tkmiz-604446132840693761-20150529_173602-img1.jpg");
+}
+
+.is-own-profile.d-cutted_covers .b-catalog_entry:nth-child(7) .cover .image-cutter img {
+    content: url("https://holedigging.club/archive/images/pics/tkmiz-738030836520386561-20160601_083358-img1.jpg");
+}
+
+.is-own-profile.d-cutted_covers .b-catalog_entry:nth-child(8) .cover .image-cutter img {
+    content: url("https://holedigging.club/archive/images/pics/tkmiz-826461979984302080-20170131_090745-img1.jpg");
 }
