@@ -997,12 +997,22 @@ div.CUSTOM_PANEL div.midheadline {
 /* https://holedigging.club/archive/images/pics/tkmiz-604446132840693761-20150529_173602-img1.jpg */
 /* https://holedigging.club/archive/images/pics/tkmiz-738030836520386561-20160601_083358-img1.jpg */
 /* https://holedigging.club/archive/images/pics/tkmiz-826461979984302080-20170131_090745-img1.jpg */
-.is-own-profile.d-cutted_covers .b-catalog_entry .cover{
+.is-own-profile.d-cutted_covers .b-catalog_entry .cover {
     pointer-events: none;
+}
+.is-own-profile.d-cutted_covers .b-catalog_entry {
+    border-bottom-left-radius: 16px;
+    border-bottom: 2px solid var(--color-2-1);
+    padding-bottom: 10px;
+}
+
+.is-own-profile.d-cutted_covers .b-catalog_entry .cover .image-cutter img{
+    border-bottom-left-radius: 16px;
 }
 
 .is-own-profile.d-cutted_covers .b-catalog_entry:nth-child(1) .cover .image-cutter img {
     content: url("https://holedigging.club/archive/images/pics/DJWwOBaV4AAudGC.jpg");
+
 }
 
 .is-own-profile.d-cutted_covers .b-catalog_entry:nth-child(2) .cover .image-cutter img {
@@ -1032,3 +1042,10 @@ div.CUSTOM_PANEL div.midheadline {
 .is-own-profile.d-cutted_covers .b-catalog_entry:nth-child(8) .cover .image-cutter img {
     content: url("https://holedigging.club/archive/images/pics/tkmiz-826461979984302080-20170131_090745-img1.jpg");
 }
+
+/* окргулые края у картинок с rounded */
+
+.rounded img {
+    border-radius: 32px;
+}
+
