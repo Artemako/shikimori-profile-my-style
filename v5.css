@@ -40,11 +40,11 @@ html[data-color-mode=light] {
 body {
     /*
     background: url(https://mobimg.b-cdn.net/v3/fetch/11/1162a11cddd79d4c84d8a7f16721a602.jpeg) repeat;
-    background: url(https://imageup.ru/img228/4686581/better-fon.png) repeat-y;
-    */
-    background: url(https://imageup.ru/img76/4762003/better-fon.png) repeat-y;
-    background-size: contain;
+    background: url(https://imageup.ru/img76/4762003/better-fon.png) repeat-y;*/
+    background: url(https://holedigging.club/archive/images/pics/CfBXVGHUAAABOgD.jpg);
     background-size: 100% auto;
+    background-attachment: fixed;
+    background-repeat: round;
 }
 
 .l-page {
