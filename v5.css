@@ -234,8 +234,11 @@ body {
 
 /* Остальные прикеолы с названиями*/
 
-section.l-page div div.profile-content div.cc-2.block div.c-column.c-right div.cc-2a.m30 div.c-column.m0:first-child div.subheadline::after {
+/* section.l-page div div.profile-content div.cc-2.block div.c-column.c-right div.cc-2a.m30 div.c-column.m0:first-child div.subheadline::after {
     content: " ?";
+} */
+div.m0:nth-child(1) > div:nth-child(1) > a:nth-child(1)::after {
+	content: " ?";
 }
 
 /* Полосы аниме и манги */
@@ -624,19 +627,19 @@ section.l-page div div.profile-content div.cc-2.block div.c-column.c-right div.c
 
 /* Текст отзывы, комментарии */
 .p-profiles .profile-head .c-info .c-additionals div::after {
-    content: 'из рыб';
+    content: 'из рыб  / ';
     color: var(--color-2-1);
     padding-left: 3px;
     padding-right: 6px;
     display: inline-block;
 }
 
-.p-profiles .profile-head .c-info .c-additionals div:last-child::before {
+/* .p-profiles .profile-head .c-info .c-additionals div:last-child::before {
     content: '/';
     color: var(--color-2-1);
     padding-right: 6px;
     display: inline-block;
-}
+} */
 
 
 /* Отступ между информацией и списками */
@@ -928,7 +931,8 @@ div.b-tooltipped {
 /* Цвет фона на мобилке */
 @media screen and (max-width: 1023px) {
     .l-page {
-        background-color: #eff1f6;
+        /* background-color: #eff1f6; */
+        background-color: #eef4fa;
     }
 }
 
