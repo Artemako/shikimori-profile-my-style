@@ -3,7 +3,7 @@
 .list-posters {
     display: flex;
     flex-wrap: wrap;
-  	gap: 4px;
+    gap: 16px 2px;
     justify-content: space-between;
 }
 .c-column.user_rate {

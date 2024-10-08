@@ -28,8 +28,13 @@ def generate_by_anime(anime):
         "SCORE" : int(score * 10)
     })
     
-def generate_css(id, score):
-    with open("output_css.txt", "a", encoding="utf-8") as f:
+def generate_css(argument, id, score):
+    if argument == 0:
+        name = "output_anime"
+    else:
+        name = "output_manga"
+    #
+    with open(name + ".txt", "a", encoding="utf-8") as f:
         f.write(f'''.c-column.user_rate[data-target_id="{id}"] {{
     order: -{score};
 }}\n''')
@@ -37,22 +42,24 @@ def generate_css(id, score):
     order: -{score};
 }}\n''')
 
-def main_anime():
-    
-    with open('Hayart_animes.json', 'r', encoding='utf-8') as f:
-        hayart_animes = json.load(f)
+
+def main(argument):    
+    if argument == 0:
+        with open('Hayart_animes.json', 'r', encoding='utf-8') as f:
+            hayart_animes = json.load(f)
+    else:
+        with open('Hayart_mangas.json', 'r', encoding='utf-8') as f:
+            hayart_animes = json.load(f)
 
     for anime in hayart_animes:
         if anime["status"] == "completed":
             generate_by_anime(anime)
 
     for anime in sorted(anime_list, key=lambda anime: anime["SCORE"], reverse=True):
-        generate_css(anime["ID"], anime["SCORE"])
+        generate_css(argument, anime["ID"], anime["SCORE"])
         
-
     
-
-
-main_anime()
+main(0)
+# main(1)
 
 
