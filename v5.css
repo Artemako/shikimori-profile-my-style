@@ -1053,3 +1053,45 @@ div.CUSTOM_PANEL div.midheadline {
     border-radius: 32px;
 }
 
+
+/* Списки */
+
+.list-posters {
+    display: flex;
+    flex-wrap: wrap;
+  	gap: 4px;
+    justify-content: space-between;
+}
+.c-column.user_rate {
+	margin: 0px 0px;
+}
+
+.list-groups .b-table.list-lines thead {
+    display: none;
+}
+
+.list-groups .b-table.list-lines tbody.entries {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.list-groups .b-table.list-lines tbody.entries tr {
+    display: flex;
+}
+
+.list-groups .b-table.list-lines tbody.entries tr td.name {
+    flex-grow: 1;
+}
+
+.list-groups .b-table.list-lines tbody.entries tr td.num{
+    width: 60px;
+    max-width: 60px;
+    min-width: 60px;
+}
+
+.list-groups .b-table.list-lines tbody.entries tr td.index{
+    width: 30px;
+    max-width: 30px;
+    min-width: 30px;
+}
