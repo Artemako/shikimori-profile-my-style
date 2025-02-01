@@ -1,0 +1,194 @@
+/* Списки */
+
+.list-posters {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 2px;
+    justify-content: space-between;
+}
+.c-column.user_rate {
+	margin: 0px 0px;
+}
+
+.list-groups .b-table.list-lines thead {
+    display: none;
+}
+
+.list-groups .b-table.list-lines tbody.entries {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.list-groups .b-table.list-lines tbody.entries tr {
+    display: flex;
+}
+
+.list-groups .b-table.list-lines tbody.entries tr td.name {
+    flex-grow: 1;
+}
+
+.list-groups .b-table.list-lines tbody.entries tr td.num{
+    width: 60px;
+    max-width: 60px;
+    min-width: 60px;
+}
+
+.list-groups .b-table.list-lines tbody.entries tr td.index{
+    width: 30px;
+    max-width: 30px;
+    min-width: 30px;
+}
+
+
+/* ОЦЕНКИ */
+.c-column.user_rate[data-text*='✦: 1--'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 1--'] {
+    order: -6;
+}
+.c-column.user_rate[data-text*='✦: 1-'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 1-'] {
+    order: -8;
+}
+.c-column.user_rate[data-text*='✦: 1'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 1'] {
+    order: -10;
+}
+.c-column.user_rate[data-text*='✦: 1+'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 1+'] {
+    order: -12;
+}
+.c-column.user_rate[data-text*='✦: 1++'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 1++'] {
+    order: -14;
+}
+.c-column.user_rate[data-text*='✦: 2--'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 2--'] {
+    order: -16;
+}
+.c-column.user_rate[data-text*='✦: 2-'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 2-'] {
+    order: -18;
+}
+.c-column.user_rate[data-text*='✦: 2'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 2'] {
+    order: -20;
+}
+.c-column.user_rate[data-text*='✦: 2+'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 2+'] {
+    order: -22;
+}
+.c-column.user_rate[data-text*='✦: 2++'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 2++'] {
+    order: -24;
+}
+.c-column.user_rate[data-text*='✦: 3--'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 3--'] {
+    order: -26;
+}
+.c-column.user_rate[data-text*='✦: 3-'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 3-'] {
+    order: -28;
+}
+.c-column.user_rate[data-text*='✦: 3'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 3'] {
+    order: -30;
+}
+.c-column.user_rate[data-text*='✦: 3+'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 3+'] {
+    order: -32;
+}
+.c-column.user_rate[data-text*='✦: 3++'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 3++'] {
+    order: -34;
+}
+.c-column.user_rate[data-text*='✦: 4--'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 4--'] {
+    order: -36;
+}
+.c-column.user_rate[data-text*='✦: 4-'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 4-'] {
+    order: -38;
+}
+.c-column.user_rate[data-text*='✦: 4'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 4'] {
+    order: -40;
+}
+.c-column.user_rate[data-text*='✦: 4+'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 4+'] {
+    order: -42;
+}
+.c-column.user_rate[data-text*='✦: 4++'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 4++'] {
+    order: -44;
+}
+.c-column.user_rate[data-text*='✦: 5--'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 5--'] {
+    order: -46;
+}
+.c-column.user_rate[data-text*='✦: 5-'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 5-'] {
+    order: -48;
+}
+.c-column.user_rate[data-text*='✦: 5'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 5'] {
+    order: -50;
+}
+.c-column.user_rate[data-text*='✦: 5+'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 5+'] {
+    order: -52;
+}
+.c-column.user_rate[data-text*='✦: 5++'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 5++'] {
+    order: -54;
+}
+.c-column.user_rate[data-text*='✦: 6--'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 6--'] {
+    order: -56;
+}
+.c-column.user_rate[data-text*='✦: 6-'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 6-'] {
+    order: -58;
+}
+.c-column.user_rate[data-text*='✦: 6'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 6'] {
+    order: -60;
+}
+.c-column.user_rate[data-text*='✦: 6+'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 6+'] {
+    order: -62;
+}
+.c-column.user_rate[data-text*='✦: 6++'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 6++'] {
+    order: -64;
+}
+.c-column.user_rate[data-text*='✦: 7--'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 7--'] {
+    order: -66;
+}
+.c-column.user_rate[data-text*='✦: 7-'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 7-'] {
+    order: -68;
+}
+.c-column.user_rate[data-text*='✦: 7'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 7'] {
+    order: -70;
+}
+.c-column.user_rate[data-text*='✦: 7+'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 7+'] {
+    order: -72;
+}
+.c-column.user_rate[data-text*='✦: 7++'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 7++'] {
+    order: -74;
+}
+.c-column.user_rate[data-text*='✦: 8--'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 8--'] {
+    order: -76;
+}
+.c-column.user_rate[data-text*='✦: 8-'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 8-'] {
+    order: -78;
+}
+.c-column.user_rate[data-text*='✦: 8'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 8'] {
+    order: -80;
+}
+.c-column.user_rate[data-text*='✦: 8+'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 8+'] {
+    order: -82;
+}
+.c-column.user_rate[data-text*='✦: 8++'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 8++'] {
+    order: -84;
+}
+.c-column.user_rate[data-text*='✦: 9--'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 9--'] {
+    order: -86;
+}
+.c-column.user_rate[data-text*='✦: 9-'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 9-'] {
+    order: -88;
+}
+.c-column.user_rate[data-text*='✦: 9'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 9'] {
+    order: -90;
+}
+.c-column.user_rate[data-text*='✦: 9+'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 9+'] {
+    order: -92;
+}
+.c-column.user_rate[data-text*='✦: 9++'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 9++'] {
+    order: -94;
+}
+.c-column.user_rate[data-text*='✦: 10--'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 10--'] {
+    order: -96;
+}
+.c-column.user_rate[data-text*='✦: 10-'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 10-'] {
+    order: -98;
+}
+.c-column.user_rate[data-text*='✦: 10'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 10'] {
+    order: -100;
+}
+.c-column.user_rate[data-text*='✦: 10+'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 10+'] {
+    order: -102;
+}
+.c-column.user_rate[data-text*='✦: 10++'], .list-groups .b-table.list-lines tbody.entries tr[data-text*='✦: 10++'] {
+    order: -104;
+}
